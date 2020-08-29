@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма - Подбор программы</title>
+</head>
+<body>
+<header class="main-header">
+  <nav class="main-header__nav main-header-nav">
+    <a class="main-header-nav__logo-img" href="index.html" aria-label="Ссылка на главную">
+      <img src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотип">
+    </a>
+    <a class="main-header-nav__logo-text" href="index.html" aria-label="Ссылка на главную">
+      <img src="https://via.placeholder.com/101x18" width="101" height="18" alt="Логотип текстом">
+    </a>
+    <button class="main-header-nav__toggle-button" type="button" aria-label="Открыть/Закрыть меню">
+      X
+    </button>
+    <ul class="main-header-nav__menu nav-menu">
+      <li class="nav-menu__item"><a href="index.html">Главная</a></li>
+      <li class="nav-menu__item"><a href="catalog.html">Каталог продукции</a></li>
+      <li class="nav-menu__item"><a href="#">Подбор программы</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="main-form">
+  <h1 class="main-form__main-header">Подбор программы</h1>
+  <h2 class="main-form__header">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+  <form class="main-form__form form" action="https://echo.htmlacademy.ru" method="post">
+    <fieldset class="form__fieldset-name">
+      <label>
+        имя:*
+        <input type="text" placeholder="барсик" name="name" required>
+      </label>
+      <label>
+        вес (кг):*
+        <input type="number" placeholder="7" name="weight" required>
+      </label>
+      <label>
+        возраст (лет):
+        <input type="number" placeholder="7" name="age">
+      </label>
+    </fieldset>
+    <fieldset class="form__fieldset-goal">
+      <label>
+        <input type="radio" name="goal" value="weight-loss" checked>
+        похудение
+      </label>
+      <label>
+        <input type="radio" name="goal" value="weight-set">
+        набор массы
+      </label>
+      <label>
+        <input type="radio" name="goal" value="need-an-advice">
+        не знаю (нужен ваш совет)
+      </label>
+    </fieldset>
+    <fieldset class="form__fieldset-master-data">
+      <legend>Контактные данные (владельца кота)</legend>
+      <label>
+        e-mail:*
+        <input type="email" name="email" placeholder="kuklachev@gmail.com" required>
+      </label>
+      <label>
+        телефон:*
+        <input
+          type="tel" name="email" placeholder="kuklachev@gmail.com" pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          required>
+      </label>
+    </fieldset>
+    <fieldset class="form__fieldset-pet-behavior">
+      <legend>
+        Комментарий
+      </legend>
+      <textarea name="pet-character" placeholder="Расскажите обо всех повадках кота">
+      </textarea>
+    </fieldset>
+    <fieldset class="form__fieldset-extra-product">
+      <label>
+        <input type="checkbox" name="sugar-substitute" checked>
+        сахарозаменитель
+      </label>
+      <label>
+        <input type="checkbox" name="sugar-substitute">
+        питьевая вода
+      </label>
+      <label>
+        <input type="checkbox" name="sugar-substitute">
+        молоко
+      </label>
+      <label>
+        <input type="checkbox" name="sugar-substitute">
+        витамины
+      </label>
+    </fieldset>
+    <button class="button" type="submit">Отправить заявку</button>
+    <p><span>*</span>&#160;&mdash;&#160;Обязательное поле</p>
+  </form>
+</main>
+<footer class="main-footer">
+  <section class="main-footer__contact-section contact-section">
+    <p class="contact-section__invitation">Приглашаем к сотрудничеству дилеров!</p>
+    <address class="contact-section__address">ул. Большая Конюшенная, 19/8 Санкт-Петербург</address>
+    <img class="contact-section__map" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Карта">
+  </section>
+  <section class="main-footer-bottom-row">
+    <a class="main-footer__logo-link" href="index.html" aria-label="Ссылка на главную">
+      <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип текстом">
+    </a>
+    <ul class="main-footer__social-link-list social-list">
+      <li class="social-list__item">
+        <a href="#" aria-label="Ссылка на нас в вк">
+          <img src="https://via.placeholder.com/23x16" width="23" height="16" alt="Вк иконка">
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="#" aria-label="Ссылка на нас в инстаграмме">
+          <img src="https://via.placeholder.com/16x16" width="16" height="16" alt="Инстаграм иконка">
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="#" aria-label="Ссылка на нас в фейсбуке">
+          <img src="https://via.placeholder.com/22x22" width="22" height="22" alt="Фейсбук иконка">
+        </a>
+      </li>
+    </ul>
+    <section class="main-footer__academy-section academy-section">
+      <a class="academy-section__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на курс">
+        <img src="https://via.placeholder.com/114x18" width="114" height="18" alt="Лого академии текстом">
+      </a>
+      <a class="academy-section__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на курс">
+        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Лого академии">
+      </a>
+    </section>
+  </section>
+</footer>
+</body>
+</html>
