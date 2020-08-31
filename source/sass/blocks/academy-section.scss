@@ -1,0 +1,13 @@
+.academy-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 45px;
+}
+
+.academy-section__link {
+  font-family: "Arial", sans-serif;
+  color: $dark-grey;
+  text-decoration: none;
+}

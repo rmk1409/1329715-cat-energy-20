@@ -1,0 +1,10 @@
+.main-header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-header-nav__toggle-button {
+  background-color: transparent;
+  border: none;
+}

@@ -1,0 +1,11 @@
+.button {
+  width: 280px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  background-color: $green;
+  text-transform: uppercase;
+  text-decoration: none;
+}

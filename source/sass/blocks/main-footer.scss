@@ -1,0 +1,17 @@
+.main-footer__bottom-row {
+  padding: 40px 0 20px;
+  background-color: $light-grey;
+}
+
+.main-footer__bottom-row-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-footer__social-link-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 130px;
+}
