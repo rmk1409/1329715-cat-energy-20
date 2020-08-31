@@ -1,0 +1,21 @@
+.contact-section__container {
+  padding-top: 28px;
+  padding-bottom: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.contact-section__invitation {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.contact-section__address {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
