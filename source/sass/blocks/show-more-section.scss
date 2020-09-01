@@ -1,0 +1,25 @@
+.show-more-section {
+  text-align: center;
+}
+
+.show-more-section__header {
+  margin: 0;
+  padding-top: 90px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.show-more-section__paragraph {
+  margin: 8px 0 0;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.show-more-section__button {
+  margin-top: 21px;
+  background-color: $light-grey;
+  color: $dark-grey;
+}

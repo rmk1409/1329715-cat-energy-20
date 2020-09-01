@@ -1,0 +1,53 @@
+.check {
+  position: relative;
+  padding-left: 39px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.check__input {
+  position: absolute;
+  appearance: none;
+}
+
+.check__box,
+.check__radio {
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 30px;
+  height: 30px;
+  background-color: $white;
+  border: 1px solid $border-grey;
+}
+
+.check__radio {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.check__input:checked + .check__radio {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 8px;
+    width: 13px;
+    height: 13px;
+    background-color: $green;
+    border-radius: 50%;
+  }
+}
+
+.check__input:checked + .check__box {
+  &::before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 5px;
+    width: 19px;
+    height: 14px;
+    background-image: url("../img/icon-tick.svg");
+  }
+}

@@ -1,0 +1,19 @@
+.nav-menu {
+  width: 100%;
+}
+
+.nav-menu__item {
+  text-align: center;
+}
+
+.nav-menu__link {
+  width: 100%;
+  display: block;
+  padding: 22px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: $dark-grey;
+  text-decoration: none;
+  text-transform: uppercase;
+}

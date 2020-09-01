@@ -2,36 +2,44 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи, главная</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="main-header">
+<header class="main-header container">
   <nav class="main-header__nav main-header-nav">
     <a class="main-header-nav__logo-img" href="#" aria-label="Ссылка на главную">
-      <img src="https://via.placeholder.com/34x38" width="34" height="38" alt="Логотип">
-    </a>
-    <a class="main-header-nav__logo-text" href="#" aria-label="Ссылка на главную">
-      <img src="https://via.placeholder.com/101x18" width="101" height="18" alt="Логотип текстом">
+      <img src="img/logo-mobile.svg" alt="Логотип" width="190" height="38">
     </a>
     <button class="main-header-nav__toggle-button" type="button" aria-label="Открыть/Закрыть меню">
       X
     </button>
-    <ul class="main-header-nav__menu nav-menu">
-      <li class="nav-menu__item"><a href="#">Главная</a></li>
-      <li class="nav-menu__item"><a href="catalog.html">Каталог продукции</a></li>
-      <li class="nav-menu__item"><a href="form.html">Подбор программы</a></li>
+    <ul class="main-header-nav__menu nav-menu reset-list">
+      <li class="nav-menu__item">
+        <a class="nav-menu__link" href="#">Главная</a>
+      </li>
+      <li class="nav-menu__item">
+        <a class="nav-menu__link" href="catalog.html">Каталог продукции</a>
+      </li>
+      <li class="nav-menu__item">
+        <a class="nav-menu__link" href="form.html">Подбор программы</a>
+      </li>
     </ul>
   </nav>
 </header>
 <main class="main-index">
-  <section class="main-index-intro index-intro">
-    <h1 class="index-intro__header">Функциональное питание для котов</h1>
-    <p class="index-intro__paragraph">Занялся собой? Займись котом!</p>
-    <a class="index-intro__button button" href="form.html">Подобрать программу</a>
+  <section class="main-index__intro index-intro">
+    <div class="container">
+      <h1 class="index-intro__header">Функциональное питание для котов</h1>
+      <p class="index-intro__paragraph">Занялся собой? Займись котом!</p>
+      <img class="index-intro__can" src="img/index-can-mobile@1x.png" alt="Продукт" width="280" height="271">
+      <a class="index-intro__button button" href="form.html">Подобрать программу</a>
+    </div>
   </section>
-  <section class="main-index__option-section option-section">
+  <section class="main-index__option-section option-section container">
     <h2 class="visually-hidden">Варианты</h2>
-    <ul class="option-section__option-list option-list">
+    <ul class="option-section__option-list option-list reset-list">
       <li>
         <article class="option-list__item option">
           <h3 class="option__header">Похудение</h3>
@@ -53,9 +61,9 @@
       </li>
     </ul>
   </section>
-  <section class="main-index__principle-section principle-section">
+  <section class="main-index__principle-section principle-section container">
     <h2 class="principle-section__header">Как это работает</h2>
-    <ul class="principle-section__list principle-list">
+    <ul class="principle-section__list principle-list reset-list">
       <li class="principle-list__item">
         <p class="principle-list__paragraph">
           Функциональное питание содержит только полезные питательные вещества.
@@ -79,64 +87,80 @@
     </ul>
   </section>
   <section class="main-index__example example">
-    <h2 class="example__header">Живой пример</h2>
-    <p class="example__paragraph">
-      Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-      Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в
-      день.
-    </p>
-    <div class="example__weight">
-      5 кг
-      <p class="example__weight-description">Снижение веса</p>
+    <div class="container">
+      <h2 class="example__header">Живой пример</h2>
+      <p class="example__paragraph">
+        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
+        в день.
+      </p>
+      <div class="example__weight">
+        5 кг
+        <p class="example__weight-description">Снижение веса</p>
+      </div>
+      <div class="example__time-spent">
+        60 дней
+        <p class="example__time-spent-description">Затрачено времени</p>
+      </div>
+      <p class="example__money-spent">Затраты на питание: 15 000 руб.</p>
+      <img src="img/before-mobile@1x.png" width="320" height="240" alt="Пример кота">
+      <div class="example__controls">
+        <button class="example__toggle-effect-button button">Было</button>
+        <div class="example_bar">
+          <div class="example_scale"></div>
+        </div>
+        <button class="example__toggle-effect-button button">Стало</button>
+      </div>
     </div>
-    <div class="example__time-spent">
-      60 дней
-      <p class="example__time-spent-description">Затрачено времени</p>
-    </div>
-    <p class="example__money-spent">Затраты на питание: 15 000 руб.</p>
-    <img src="https://via.placeholder.com/311x232" width="311" height="232" alt="Пример кота">
-    <button class="example__toggle-effect-button">Было</button>
-    <div class="example_bar">
-      <div class="example_scale"></div>
-    </div>
-    <button class="example__toggle-effect-button">Стало</button>
   </section>
 </main>
 <footer class="main-footer">
-  <section class="main-footer__contact-section contact-section">
-    <p class="contact-section__invitation">Приглашаем к сотрудничеству дилеров!</p>
-    <address class="contact-section__address">ул. Большая Конюшенная, 19/8 Санкт-Петербург</address>
-    <img class="contact-section__map" src="https://via.placeholder.com/320x362" width="320" height="362" alt="Карта">
+  <section class="main-footer__contact-section main-footer__contact-section--index contact-section">
+    <div class="contact-section__container container">
+      <p class="contact-section__invitation">
+        Приглашаем<br>
+        к сотрудничеству дилеров!
+      </p>
+      <address class="contact-section__address">ул. Большая Конюшенная, 19/8 Санкт-Петербург</address>
+    </div>
+    <div class="contact-section__map map">
+      <iframe
+        class="map__iframe" allowfullscreen="" aria-hidden="false" tabindex="0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616173568!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sby!4v1598765946756!5m2!1sen!2sby">
+      </iframe>
+    </div>
   </section>
-  <section class="main-footer-bottom-row">
-    <a class="main-footer__logo-link" href="#" aria-label="Ссылка на главную">
-      <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип текстом">
-    </a>
-    <ul class="main-footer__social-link-list social-list">
-      <li class="social-list__item">
-        <a href="#" aria-label="Ссылка на нас в вк">
-          <img src="https://via.placeholder.com/23x16" width="23" height="16" alt="Вк иконка">
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a href="#" aria-label="Ссылка на нас в инстаграмме">
-          <img src="https://via.placeholder.com/16x16" width="16" height="16" alt="Инстаграм иконка">
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a href="#" aria-label="Ссылка на нас в фейсбуке">
-          <img src="https://via.placeholder.com/22x22" width="22" height="22" alt="Фейсбук иконка">
-        </a>
-      </li>
-    </ul>
-    <section class="main-footer__academy-section academy-section">
-      <a class="academy-section__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на курс">
-        <img src="https://via.placeholder.com/114x18" width="114" height="18" alt="Лого академии текстом">
+  <section class="main-footer__bottom-row">
+    <div class="main-footer__bottom-row-container container">
+      <a class="main-footer__logo-link" href="#" aria-label="Ссылка на главную">
+        <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип текстом">
       </a>
-      <a class="academy-section__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на курс">
-        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Лого академии">
-      </a>
-    </section>
+      <ul class="main-footer__social-link-list social-list reset-list">
+        <li class="social-list__item">
+          <a href="#" aria-label="Ссылка на нас в вк">
+            <img src="img/icon-vk.svg" width="23" height="16" alt="Вк иконка">
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" aria-label="Ссылка на нас в инстаграме">
+            <img src="img/icon-insta.svg" width="16" height="16" alt="Инстаграм иконка">
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" aria-label="Ссылка на нас в фейсбуке">
+            <img src="img/icon-fb.svg" width="22" height="22" alt="Фейсбук иконка">
+          </a>
+        </li>
+      </ul>
+      <section class="main-footer__academy-section academy-section">
+        <a class="academy-section__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на курс">
+          HTML Academy
+        </a>
+        <a class="academy-section__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на курс">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Лого академии">
+        </a>
+      </section>
+    </div>
   </section>
 </footer>
 </body>
