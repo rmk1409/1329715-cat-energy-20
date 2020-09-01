@@ -3,9 +3,10 @@
   padding: 10px;
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
   align-items: center;
+  border: none;
+  text-decoration: none;
   color: $white;
   background-color: $green;
-  text-transform: uppercase;
-  text-decoration: none;
 }

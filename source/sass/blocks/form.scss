@@ -1,0 +1,98 @@
+.form {
+  overflow: hidden;
+}
+
+.form__fieldset-name {
+  margin: 40px 0 0;
+  padding-bottom: 10px;
+}
+
+.form__label {
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark-grey;
+}
+
+.form__label-and-input-div {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__input-text-or-number {
+  padding: 13px 15px;
+  margin-left: 15px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid $input-border-grey;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: $dark-grey;
+  }
+}
+
+.form__fieldset-goal,
+.form__fieldset-master-data {
+  position: relative;
+  padding-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120vw;
+    border: 1px solid $line-grey;
+  }
+}
+
+.form__legend {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 26px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 13px;
+    width: 100vw;
+    margin-left: 15px;
+    border: 2px solid $green;
+  }
+}
+
+.form__fieldset-master-data {
+  padding: 20px 0;
+}
+
+.form__text-area {
+  width: 100%;
+  min-height: 150px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  border: 1px solid $line-grey;
+  resize: none;
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
+}
+
+.form__fieldset-extra-product {
+  padding-top: 30px;
+}
+
+.form__submit-button-and-paragraph-div {
+  padding-top: 35px;
+  text-align: center;
+}
