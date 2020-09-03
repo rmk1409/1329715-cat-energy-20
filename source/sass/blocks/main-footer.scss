@@ -7,13 +7,46 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  min-height: 175px;
+
+  @media (min-width: $tablet-min-width) {
+    flex-direction: row;
+    min-height: auto;
+  }
 }
 
 .main-footer__social-link-list {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
   width: 130px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: -28px;
+    left: -70px;
+    content: "";
+    width: 280px;
+    border: 1px solid $line-grey;
+
+    @media (min-width: $tablet-min-width) {
+      display: none;
+    }
+  }
+
+  &::after {
+    top: 50px;
+  }
+}
+
+.main-footer__academy-section {
+  width: 100%;
+
+  @media (min-width: $tablet-min-width) {
+    width: 163px;
+  }
 }
 
 .main-footer__contact-section {

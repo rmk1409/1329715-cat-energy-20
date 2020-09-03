@@ -1,3 +1,9 @@
 .main-header {
   padding: 10px 0;
 }
+
+.main-header--index {
+  @media (min-width: $desktop-min-width) {
+    background-image: linear-gradient(to right, $white 50%, $green-for-back 50%);
+  }
+}
