@@ -3,3 +3,16 @@
     margin-top: 80px;
   }
 }
+
+.main-index__example {
+  @media (min-width: $tablet-min-width) {
+    border-top: 1px solid $border-grey2;
+    background-image: linear-gradient(white 420px, #eaeaea 420px);
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding-bottom: 75px;
+    border: none;
+    background-image: linear-gradient(white 150px, #eaeaea 150px);
+  }
+}
