@@ -1,9 +1,33 @@
-.main-header {
-  padding: 10px 0;
-}
-
 .main-header--index {
   @media (min-width: $desktop-min-width) {
     background-image: linear-gradient(to right, $white 50%, $green-for-back 50%);
+  }
+}
+
+.main-header__upper-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid $border-grey2;
+
+  @media (min-width: $tablet-min-width) {
+    justify-content: space-between;
+    width: 175px;
+    padding: 10px 0;
+    margin-left: 30px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-left: 110px;
+  }
+}
+
+.main-header-nav__logo-text {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-min-width) {
+    margin: 0;
   }
 }
