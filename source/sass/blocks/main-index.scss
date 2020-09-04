@@ -1,3 +1,16 @@
+.main-index__principle-section {
+  margin-top: 27px;
+
+  @media (min-width: $tablet-min-width) {
+    margin-top: 45px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-top: 70px;
+    padding-bottom: 0;
+  }
+}
+
 .main-index__option-section {
   @media (min-width: $desktop-min-width) {
     margin-top: 80px;
@@ -7,12 +20,13 @@
 .main-index__example {
   @media (min-width: $tablet-min-width) {
     border-top: 1px solid $border-grey2;
-    background-image: linear-gradient(white 420px, #eaeaea 420px);
+    background-image: linear-gradient(white 618px, $grey 618px);
   }
 
   @media (min-width: $desktop-min-width) {
+    padding-top: 65px;
     padding-bottom: 75px;
     border: none;
-    background-image: linear-gradient(white 150px, #eaeaea 150px);
+    background-image: linear-gradient(white 200px, $grey 200px);
   }
 }

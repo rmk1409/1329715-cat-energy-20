@@ -1,6 +1,11 @@
 .example {
-  padding: 20px 0;
+  padding: 27px 0 23px;
   background-color: $grey;
+
+  @media (min-width: $tablet-min-width) {
+    padding-top: 42px;
+    padding-bottom: 59px;
+  }
 }
 
 .example__header {
@@ -23,11 +28,13 @@
 .example__paragraph {
   grid-column: 1/-1;
   width: 270px;
-  padding: 30px 0 25px;
+  margin: 33px 0 25px;
   font-family: "Arial", sans-serif;
 
   @media (min-width: $tablet-min-width) {
     width: auto;
+    margin-top: 64px;
+    margin-bottom: 53px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -44,16 +51,18 @@
 .example__weight,
 .example__time-spent {
   width: 124px;
-  padding: 15px 5px;
+  padding: 13px 5px 10px;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
   border: 1px solid $border-grey;
   border-radius: 3px;
 
   @media (min-width: $tablet-min-width) {
     width: 162px;
+    padding-bottom: 21px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -75,6 +84,7 @@
   text-transform: lowercase;
 
   @media (min-width: $tablet-min-width) {
+    margin-top: 12px;
     padding: 0 8px;
     width: max-content;
     font-size: 14px;
@@ -90,7 +100,7 @@
 
 .example__money-spent {
   grid-column: 1/-1;
-  margin: 30px 0 0;
+  margin: 34px 0 0;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -99,8 +109,10 @@
   @media (min-width: $tablet-min-width) {
     grid-column: auto;
     margin-left: auto;
+    margin-top: 8px;
     width: 180px;
     font-size: 20px;
+    line-height: 28px;
     text-align: right;
   }
 
@@ -122,7 +134,7 @@
 .example__img-div {
   position: relative;
   grid-column: 1/-1;
-  margin-top: 40px;
+  margin-top: 34px;
   min-height: 250px;
 
   @media (min-width: $tablet-min-width) {
@@ -161,11 +173,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 25px auto 0;
-  width: 228px;
+  margin: 13px auto 0;
+  width: 217px;
 
   @media (min-width: $tablet-min-width) {
-    width: 590px;
+    margin-top: 322px;
+    width: 570px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -175,7 +188,7 @@
 }
 
 .example__toggle-effect-button {
-  width: 70px;
+  width: min-content;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -184,8 +197,19 @@
   border: none;
 
   @media (min-width: $tablet-min-width) {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 9px;
+      width: 100%;
+      border-bottom: 1px dotted rgba($black, 0.24);
+    }
   }
 }
 
@@ -216,7 +240,7 @@
 
   @media (min-width: $tablet-min-width) {
     top: -14px;
-    left: 190px;
+    left: 199px;
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -228,9 +252,10 @@
 .example__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
 
   @media (min-width: $tablet-min-width) {
-    grid-template-columns: 202px 202px 1fr;
+    grid-template-columns: 175px 202px 1fr;
   }
 
   @media (min-width: $desktop-min-width) {
