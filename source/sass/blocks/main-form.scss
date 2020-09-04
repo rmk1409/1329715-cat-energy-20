@@ -1,7 +1,20 @@
+.main-form__form {
+  margin-top: 40px;
+
+  @media (min-width: $tablet-min-width) {
+    margin-top: 70px;
+  }
+}
+
 .main-form__main-header {
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-form__header {
@@ -11,4 +24,10 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-min-width) {
+    width: 335px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

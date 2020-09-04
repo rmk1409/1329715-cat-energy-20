@@ -39,114 +39,123 @@
     <h2 class="main-form__header">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
   </div>
   <form class="main-form__form form" action="https://echo.htmlacademy.ru" method="post">
-    <fieldset class="form__fieldset-name reset-fieldset">
-      <div class="container">
-        <div class="form__label-and-input-div">
-          <label class="form__label" for="name-input">
-            имя:*
-          </label>
-          <input
-            class="form__input-text-or-number" id="name-input" type="text" placeholder="барсик" name="name"
-            required>
+    <div class="form__desktop-container">
+      <fieldset class="form__fieldset-name reset-fieldset">
+        <div class="form__container">
+          <div class="form__label-and-input-div">
+            <label class="form__label" for="name-input">
+              имя:*
+            </label>
+            <input
+              class="form__input-text-or-number" id="name-input" type="text" placeholder="барсик" name="name"
+              required>
+          </div>
+          <div class="form__label-and-input-div">
+            <label class="form__label" for="weight-input">
+              вес&nbsp;(кг):*
+            </label>
+            <input
+              class="form__input-text-or-number" id="weight-input" type="number" placeholder="7" name="weight"
+              required>
+          </div>
+          <div class="form__label-and-input-div">
+            <label class="form__label" for="age-input">
+              возраст&nbsp;(лет):
+            </label>
+            <input class="form__input-text-or-number" id="age-input" type="number" placeholder="7" name="age">
+          </div>
         </div>
-        <div class="form__label-and-input-div">
-          <label class="form__label" for="weight-input">
-            вес&nbsp;(кг):*
-          </label>
-          <input
-            class="form__input-text-or-number" id="weight-input" type="number" placeholder="7" name="weight"
-            required>
+      </fieldset>
+      <fieldset class="form__fieldset-goal reset-fieldset">
+        <div class="form__container">
+          <div class="form__fieldset-goal-container">
+            <label class="form__label check">
+              <input class="check__input" type="radio" name="goal" value="weight-loss" checked>
+              <span class="check__radio"></span>
+              похудение
+            </label>
+            <label class="form__label check">
+              <input class="check__input" type="radio" name="goal" value="weight-set">
+              <span class="check__radio"></span>
+              набор массы
+            </label>
+            <label class="form__label check">
+              <input class="check__input" type="radio" name="goal" value="need-an-advice">
+              <span class="check__radio"></span>
+              не знаю (нужен ваш совет)
+            </label>
+          </div>
         </div>
-        <div class="form__label-and-input-div">
-          <label class="form__label" for="age-input">
-            возраст&nbsp;(лет):
-          </label>
-          <input class="form__input-text-or-number" id="age-input" type="number" placeholder="7" name="age">
+      </fieldset>
+      <fieldset class="form__fieldset-master-data reset-fieldset">
+        <div class="form__fieldset-master-data-container form__container">
+          <legend class="form__legend form__legend--master-data">
+            Контактные данные (владельца кота)
+          </legend>
+          <div class="form__label-and-input-div">
+            <label class="form__label" for="email-input">
+              e&#x2011;mail:*
+            </label>
+            <div class="form__input-email-div">
+              <input
+                class="form__input-text-or-number" id="email-input" type="email" name="email"
+                placeholder="kuklachev@gmail.com" required>
+            </div>
+          </div>
+          <div class="form__label-and-input-div">
+            <label class="form__label" for="phone-input">
+              телефон:*
+            </label>
+            <div class="form__input-phone-div">
+              <input
+                class="form__input-text-or-number" id="phone-input" type="tel" name="phone"
+                placeholder="8 (960) 900-60-90"
+                pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+            </div>
+          </div>
         </div>
-      </div>
-    </fieldset>
-    <fieldset class="form__fieldset-goal reset-fieldset">
-      <div class="container">
-        <label class="form__label check">
-          <input class="check__input" type="radio" name="goal" value="weight-loss" checked>
-          <span class="check__radio"></span>
-          похудение
-        </label>
-        <label class="form__label check">
-          <input class="check__input" type="radio" name="goal" value="weight-set">
-          <span class="check__radio"></span>
-          набор массы
-        </label>
-        <label class="form__label check">
-          <input class="check__input" type="radio" name="goal" value="need-an-advice">
-          <span class="check__radio"></span>
-          не знаю (нужен ваш совет)
-        </label>
-      </div>
-    </fieldset>
-    <fieldset class="form__fieldset-master-data reset-fieldset">
-      <div class="container">
-        <legend class="form__legend">
-          Контактные данные (владельца кота)
-        </legend>
-        <div class="form__label-and-input-div">
-          <label class="form__label" for="email-input">
-            e&#x2011;mail:*
-          </label>
-          <input
-            class="form__input-text-or-number" id="email-input" type="email" name="email"
-            placeholder="kuklachev@gmail.com" required>
+      </fieldset>
+      <fieldset class="form__fieldset-pet-behavior reset-fieldset">
+        <div class="form__container">
+          <legend class="form__legend">
+            Комментарий
+          </legend>
+          <textarea
+            class="form__text-area" name="pet-character"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
-        <div class="form__label-and-input-div">
-          <label class="form__label" for="phone-input">
-            телефон:*
+      </fieldset>
+      <fieldset class="form__fieldset-extra-product reset-fieldset">
+        <div class="form__fieldset-extra-product-container form__container">
+          <legend class="form__legend form__fieldset-extra-product-legend">
+            Дополнительно
+          </legend>
+          <label class="form__label check">
+            <input class="check__input" type="checkbox" name="sugar-substitute" checked>
+            <span class="check__box"></span>
+            сахарозаменитель
           </label>
-          <input
-            class="form__input-text-or-number" id="phone-input" type="tel" name="phone" placeholder="8 (960) 900-60-90"
-            pattern="7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+          <label class="form__label check">
+            <input class="check__input" type="checkbox" name="sugar-substitute">
+            <span class="check__box"></span>
+            питьевая вода
+          </label>
+          <label class="form__label check">
+            <input class="check__input" type="checkbox" name="sugar-substitute">
+            <span class="check__box"></span>
+            молоко
+          </label>
+          <label class="form__label check">
+            <input class="check__input" type="checkbox" name="sugar-substitute">
+            <span class="check__box"></span>
+            витамины
+          </label>
         </div>
+      </fieldset>
+      <div class="form__submit-button-and-paragraph-div form__container">
+        <button class="form__submit-button button" type="submit">Отправить заявку</button>
+        <p class="form__necessary-field-paragraph"><span>*</span>&#160;&mdash;&#160;Обязательные поля</p>
       </div>
-    </fieldset>
-    <fieldset class="form__fieldset-pet-behavior reset-fieldset">
-      <div class="container">
-        <legend class="form__legend">
-          Комментарий
-        </legend>
-        <textarea
-          class="form__text-area" name="pet-character"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
-      </div>
-    </fieldset>
-    <fieldset class="form__fieldset-extra-product reset-fieldset">
-      <div class="container">
-        <legend class="form__legend">
-          Дополнительно
-        </legend>
-        <label class="form__label check">
-          <input class="check__input" type="checkbox" name="sugar-substitute" checked>
-          <span class="check__box"></span>
-          сахарозаменитель
-        </label>
-        <label class="form__label check">
-          <input class="check__input" type="checkbox" name="sugar-substitute">
-          <span class="check__box"></span>
-          питьевая вода
-        </label>
-        <label class="form__label check">
-          <input class="check__input" type="checkbox" name="sugar-substitute">
-          <span class="check__box"></span>
-          молоко
-        </label>
-        <label class="form__label check">
-          <input class="check__input" type="checkbox" name="sugar-substitute">
-          <span class="check__box"></span>
-          витамины
-        </label>
-      </div>
-    </fieldset>
-    <div class="form__submit-button-and-paragraph-div container">
-      <button class="form__submit-button button" type="submit">Отправить заявку</button>
-      <p><span>*</span>&#160;&mdash;&#160;Обязательные поля</p>
     </div>
   </form>
 </main>

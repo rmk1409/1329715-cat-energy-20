@@ -8,6 +8,7 @@
 .main-header-nav__toggle-button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-min-width) {
     display: none;
