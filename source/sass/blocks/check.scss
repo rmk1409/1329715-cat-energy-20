@@ -5,6 +5,10 @@
   cursor: pointer;
 }
 
+.check:first-child {
+  margin: 0;
+}
+
 .check__input {
   position: absolute;
   appearance: none;

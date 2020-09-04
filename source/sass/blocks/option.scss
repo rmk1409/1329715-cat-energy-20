@@ -1,28 +1,155 @@
 .option {
   padding: 20px;
   background-color: $light-grey;
+
+  @media (min-width: $tablet-min-width) {
+    padding: 70px 280px 50px 50px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    width: 570px;
+    padding: 80px 50px 60px;
+  }
 }
 
 .option__header {
+  position: relative;
   margin: 0;
   padding-left: 71px;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 50px;
+    height: 50px;
+  }
+
+  &::before {
+    border-radius: 50%;
+    background-color: $green;
+  }
+
+  &::after {
+    left: 5px;
+    top: -3px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before,
+    &::after {
+      left: 400px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      left: 431px;
+      top: -10px;
+      width: 140px;
+      height: 192px;
+    }
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding-left: 150px;
+
+    &::before,
+    &::after {
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      top: -7px;
+      left: 20px;
+      width: 70px;
+      height: 97px;
+    }
+  }
+}
+
+.option__header--weight {
+  &::after {
+    left: -11px;
+    top: 10px;
+    width: 68px;
+    background-image: url("../img/icon-cat-pro.svg");
+  }
+
+  @media (min-width: $tablet-min-width) {
+    &::after {
+      left: 361px;
+      top: 50px;
+      width: 268px;
+      height: 112px;
+    }
+  }
+
+  @media (min-width: $desktop-min-width) {
+    &::after {
+      left: -20px;
+      top: 20px;
+      width: 134px;
+      height: 56px;
+    }
+  }
 }
 
 .option__paragraph {
   margin: 30px 0 0;
+  padding-bottom: 15px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  border-bottom: 1px solid $line-grey;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-top: 70px;
+  }
 }
 
 .option__link {
-  margin-top: 20px;
-  display: block;
+  position: relative;
+  margin-top: 10px;
+  padding-right: 40px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
   text-decoration: none;
   color: $black;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 24px;
+    height: 11px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+  }
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

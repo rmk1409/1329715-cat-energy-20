@@ -6,6 +6,33 @@
   background-position-x: center;
   color: $white;
   text-align: center;
+
+  @media (min-width: $tablet-min-width) {
+    min-height: 820px;
+    text-align: start;
+    color: $black;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-size: auto;
+    background-position-y: 210px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    position: relative;
+    min-height: 635px;
+    background-image: linear-gradient(to right, $white 50%, $green-for-back 50%);
+    background-position: 0;
+    background-size: auto;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -61px;
+      right: 0;
+      width: 720px;
+      height: 696px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+    }
+  }
 }
 
 .index-intro__header {
@@ -13,14 +40,48 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-min-width) {
+    width: 420px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .index-intro__paragraph {
   margin: 25px 0 0;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-min-width) {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .index-intro__can {
   margin: 30px 0 0;
+
+  @media (min-width: $tablet-min-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    position: absolute;
+    left: 590px;
+    top: 80px;
+    z-index: 1;
+    display: block;
+  }
+}
+
+.index-intro__button {
+  @media (min-width: $tablet-min-width) {
+    margin-top: 50px;
+  }
+}
+
+.index-intro__container {
+  position: relative;
 }

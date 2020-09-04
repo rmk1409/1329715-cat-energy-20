@@ -1,8 +1,29 @@
+.contact-section {
+  position: relative;
+}
+
 .contact-section__container {
   padding-top: 28px;
   padding-bottom: 22px;
   display: grid;
   grid-template-columns: repeat(2, auto);
+
+  @media (min-width: $tablet-min-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 66px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+    padding-left: 80px;
+    padding-right: 90px;
+    background-color: $white;
+  }
 }
 
 .contact-section__invitation {
@@ -11,6 +32,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-min-width) {
+    width: 160px;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contact-section__address {
@@ -19,4 +46,22 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-min-width) {
+    width: 150px;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    text-align: left;
+  }
+}
+
+.contact-section__address br {
+  display: none;
+
+  @media (min-width: $tablet-min-width) {
+    display: block;
+  }
 }

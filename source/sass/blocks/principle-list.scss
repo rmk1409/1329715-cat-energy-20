@@ -2,9 +2,95 @@
   display: grid;
   row-gap: 20px;
   font-family: "Arial", sans-serif;
+
+  @media (min-width: $tablet-min-width) {
+    grid-template-columns: repeat(2, 250px);
+    gap: 30px 150px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    grid-template-columns: repeat(4, 237px);
+    gap: 90px;
+  }
 }
 
 .principle-list__paragraph {
+  position: relative;
   margin: 0;
   padding-left: 80px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $green;
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      top: -90px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "1";
+      top: -120px;
+      right: 20px;
+      z-index: -1;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: $light-grey;
+    }
+  }
+}
+
+.principle-list__paragraph--powder {
+  &::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &::after {
+    @media (min-width: $tablet-min-width) {
+      content: "2";
+    }
+  }
+}
+
+.principle-list__paragraph--nutrition {
+  &::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &::after {
+    @media (min-width: $tablet-min-width) {
+      content: "3";
+    }
+  }
+}
+
+.principle-list__paragraph--month {
+  &::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+
+  &::after {
+    @media (min-width: $tablet-min-width) {
+      content: "4";
+    }
+  }
+}
+
+.principle-list__item {
+  @media (min-width: $tablet-min-width) {
+    padding: 150px 0 60px;
+  }
 }
