@@ -89,12 +89,18 @@
 }
 
 .index-intro__button {
+  font-size: inherit;
+
   @media (min-width: $tablet-min-width) {
     margin-top: 50px;
     width: 244px;
     padding-top: 17px;
     padding-bottom: 18px;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-top: 53px;
   }
 }
 

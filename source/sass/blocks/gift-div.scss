@@ -9,7 +9,7 @@
   @media (min-width: $tablet-min-width) and (max-width: $desktop-min-width - 1px) {
     width: 100%;
     min-height: 200px;
-    padding: 70px 80px 70px 415px;
+    padding: 72px 80px 68px 423px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
 
@@ -21,7 +21,7 @@
 
 .gift-div__paragraph {
   position: relative;
-  padding-top: 186px;
+  padding-top: 188px;
   width: 165px;
   margin: 0 auto;
   font-family: "Arial", sans-serif;
@@ -31,7 +31,8 @@
   &::before {
     position: absolute;
     content: "";
-    top: 60px;
+    top: 58px;
+    left: 43px;
     width: 78px;
     height: 80px;
     background-image: url("../img/icon-gift.svg");
@@ -43,14 +44,14 @@
     text-align: left;
 
     &::before {
-      left: -340px;
-      top: -10px;
+      top: -14px;
+      left: -344px;
     }
   }
 }
 
 .gift-div__paragraph br {
-  @media (min-width: $tablet-min-width) {
+  @media (min-width: $desktop-min-width) {
     display: none;
   }
 }

@@ -1,11 +1,11 @@
 .extra-product-card {
-  padding: 20px 0;
+  padding: 13px 0 18px;
 
   @media (min-width: $tablet-min-width) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 25px 40px;
+    padding: 25px 36px 27px 38px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -29,13 +29,14 @@
 }
 
 .extra-product-card__description-and-price {
-  margin-top: 10px;
+  margin-top: 13px;
   display: flex;
   justify-content: space-between;
   font-family: "Arial", sans-serif;
   line-height: 14px;
 
   @media (min-width: $tablet-min-width) {
+    margin-top: 7px;
     font-size: 16px;
   }
 
@@ -46,7 +47,7 @@
 }
 
 .extra-product-card__order-button {
-  margin-top: 15px;
+  margin-top: 14px;
 
   @media (min-width: $tablet-min-width) {
     margin-top: 25px;
@@ -61,7 +62,15 @@
 }
 
 .extra-product-card__price {
+  text-transform: uppercase;
+
   @media (min-width: $tablet-min-width) {
     margin-left: 50px;
+  }
+}
+
+.extra-product-card__price--water {
+  @media (min-width: $tablet-min-width) {
+    margin-left: 61px;
   }
 }
