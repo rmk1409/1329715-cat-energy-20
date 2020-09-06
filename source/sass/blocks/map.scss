@@ -5,8 +5,27 @@
   background-size: 57px 53px, auto;
   background-color: $grey;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-pin.png"), url("../img/bg-map-mobile@2x.png");
+    background-size: 57px 53px, 320 auto;
+  }
+
   @media (min-width: $tablet-min-width) {
     background-image: url("../img/map-pin.png"), url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-pin.png"), url("../img/bg-map-tablet@2x.png");
+      background-size: 57px 53px, 767px auto;
+    }
+  }
+
+  @media (min-width: $desktop-min-width) {
+    background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@2x.png");
+      background-size: 57px 53px, 1440px auto;
+    }
   }
 }
 

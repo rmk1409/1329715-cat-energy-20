@@ -7,6 +7,11 @@
   color: $white;
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg"), linear-gradient($green-for-back 305px, $white 305px);
+    background-size: 320px auto;
+  }
+
   @media (min-width: $tablet-min-width) {
     padding-top: 33px;
     min-height: 843px;
@@ -15,6 +20,11 @@
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-size: auto;
     background-position-y: 234px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-size: 709px auto;
+    }
   }
 
   @media (min-width: $desktop-min-width) {
@@ -33,6 +43,11 @@
       width: 720px;
       height: 696px;
       background-image: url("../img/index-background-desktop@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
     }
   }
 }
