@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-min-width) {
-    padding: 15px 0;
+    padding: 15px 0 16px;
     justify-content: normal;
     align-items: center;
   }
@@ -72,5 +72,10 @@
 .extra-product-card__price--water {
   @media (min-width: $tablet-min-width) {
     margin-left: 61px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    margin-left: auto;
+    margin-right: 8px;
   }
 }

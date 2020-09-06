@@ -1,8 +1,13 @@
 .check {
   position: relative;
-  padding-left: 39px;
-  margin-top: 20px;
+  margin-top: 25px;
+  padding-left: 45px;
   cursor: pointer;
+
+  @media (min-width: $tablet-min-width) {
+    margin-top: 23px;
+    padding-left: 62px;
+  }
 }
 
 .check:first-child {
@@ -18,16 +23,19 @@
 .check__radio {
   position: absolute;
   left: 0;
-  top: -4px;
+  top: -6px;
   width: 30px;
   height: 30px;
   background-color: $white;
   border: 1px solid $border-grey;
+
+  @media (min-width: $tablet-min-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .check__radio {
-  width: 30px;
-  height: 30px;
   border-radius: 50%;
 }
 
@@ -42,6 +50,15 @@
     background-color: $green;
     border-radius: 50%;
   }
+
+  @media (min-width: $tablet-min-width) {
+    &::before {
+      width: 18px;
+      height: 18px;
+      top: 11px;
+      left: 11px;
+    }
+  }
 }
 
 .check__input:checked + .check__box {
@@ -53,5 +70,12 @@
     width: 19px;
     height: 14px;
     background-image: url("../img/icon-tick.svg");
+  }
+
+  @media (min-width: $tablet-min-width) {
+    &::before {
+      top: 12px;
+      left: 9px;
+    }
   }
 }

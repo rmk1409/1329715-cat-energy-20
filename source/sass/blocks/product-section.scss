@@ -6,6 +6,11 @@
     padding-top: 34px;
     padding-bottom: 75px;
   }
+
+  @media (min-width: $desktop-min-width) {
+    padding-top: 47px;
+    padding-bottom: 85px;
+  }
 }
 
 .product-section__header {
@@ -37,9 +42,10 @@
   }
 
   @media (min-width: $desktop-min-width) {
+    margin-top: 85px;
     width: 1220px;
     grid-template-columns: repeat(4, 245px);
-    gap: 80px;
+    gap: 62px 80px;
   }
 }
 
@@ -81,9 +87,11 @@
 
   @media (min-width: $desktop-min-width) {
     grid-column: 1/-1;
+    margin-top: 76px;
+    margin-left: 0;
 
     &::before {
-      right: 1250px;
+      right: 1260px;
     }
   }
 }

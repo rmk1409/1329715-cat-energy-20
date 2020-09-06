@@ -16,8 +16,18 @@
 
 .social-list__item {
   margin-right: 35px;
+
+  @media (min-width: $tablet-min-width) {
+    margin-right: 33px;
+  }
 }
 
 .social-list__item:last-child {
   margin-right: 0;
+}
+
+.social-list__image {
+  @media (min-width: $tablet-min-width) {
+    transform: scale(1.4);
+  }
 }
