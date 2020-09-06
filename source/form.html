@@ -14,10 +14,13 @@
         <img src="img/logo-mobile.svg" alt="Логотип" width="34" height="38">
       </a>
       <a class="main-header-nav__logo-text" href="index.html" aria-label="Ссылка на главную">
-        <img src="img/logo-footer.svg" width="101" height="18" alt="Логотип текстом">
+        <img
+          class="main-header-nav__logo-text-img" src="img/logo-footer.svg" width="101" height="18"
+          alt="Логотип текстом">
       </a>
-      <button class="main-header-nav__toggle-button" type="button" aria-label="Открыть/Закрыть меню">
-        X
+      <button
+        class="main-header-nav__toggle-button menu-toggle-button visually-hidden" type="button"
+        aria-label="Открыть/Закрыть меню">
       </button>
     </div>
     <ul class="main-header-nav__menu nav-menu reset-list">
@@ -161,12 +164,17 @@
 </main>
 <footer class="main-footer">
   <section class="main-footer__contact-section contact-section">
-    <div class="contact-section__container container">
-      <p class="contact-section__invitation">
-        Приглашаем<br>
-        к сотрудничеству дилеров!
-      </p>
-      <address class="contact-section__address">ул. Большая Конюшенная, 19/8 Санкт-Петербург</address>
+    <div class="container">
+      <div class="contact-section__container">
+        <p class="contact-section__invitation">
+          Приглашаем<br>
+          к сотрудничеству дилеров!
+        </p>
+        <address class="contact-section__address">
+          ул. Большая Конюшенная, д. 19/8<br><br>
+          Санкт-Петербург
+        </address>
+      </div>
     </div>
     <div class="contact-section__map map">
       <iframe
@@ -183,17 +191,17 @@
       <ul class="main-footer__social-link-list social-list reset-list">
         <li class="social-list__item">
           <a href="#" aria-label="Ссылка на нас в вк">
-            <img src="img/icon-vk.svg" width="23" height="16" alt="Вк иконка">
+            <img class="social-list__image" src="img/icon-vk.svg" width="23" height="16" alt="Вк иконка">
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" aria-label="Ссылка на нас в инстаграме">
-            <img src="img/icon-insta.svg" width="16" height="16" alt="Инстаграм иконка">
+            <img class="social-list__image" src="img/icon-insta.svg" width="16" height="16" alt="Инстаграм иконка">
           </a>
         </li>
         <li class="social-list__item">
           <a href="#" aria-label="Ссылка на нас в фейсбуке">
-            <img src="img/icon-fb.svg" width="22" height="22" alt="Фейсбук иконка">
+            <img class="social-list__image" src="img/icon-fb.svg" width="22" height="22" alt="Фейсбук иконка">
           </a>
         </li>
       </ul>
@@ -208,5 +216,6 @@
     </div>
   </section>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

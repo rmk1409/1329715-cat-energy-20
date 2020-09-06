@@ -4,15 +4,14 @@
 
 .contact-section__container {
   padding-top: 28px;
-  padding-bottom: 22px;
+  padding-bottom: 26px;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 140px);
 
   @media (min-width: $tablet-min-width) {
     display: flex;
     justify-content: space-between;
-    padding-top: 66px;
-    padding-bottom: 50px;
+    padding: 66px 42px 55px 40px;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -20,23 +19,23 @@
     top: 95px;
     left: 110px;
     width: 570px;
-    padding-left: 80px;
-    padding-right: 90px;
+    padding-left: 76px;
+    padding-right: 84px;
     background-color: $white;
   }
 }
 
 .contact-section__invitation {
   margin: 0;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-min-width) {
     width: 160px;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
+    font-weight: normal;
   }
 }
 
@@ -48,7 +47,7 @@
   line-height: 20px;
 
   @media (min-width: $tablet-min-width) {
-    width: 150px;
+    width: 160px;
     font-size: 16px;
     text-align: right;
   }

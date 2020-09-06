@@ -8,13 +8,13 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 20px 14px;
   border-bottom: 1px solid $border-grey2;
 
   @media (min-width: $tablet-min-width) {
     justify-content: space-between;
     width: 175px;
-    padding: 10px 0;
+    padding: 0;
     margin-left: 30px;
     border: none;
   }
@@ -24,8 +24,12 @@
   }
 }
 
+.main-header-nav__logo-img {
+  margin-right: -10px;
+}
+
 .main-header-nav__logo-text {
-  margin: 0 auto;
+  margin: 8px auto 0;
 
   @media (min-width: $tablet-min-width) {
     margin: 0;

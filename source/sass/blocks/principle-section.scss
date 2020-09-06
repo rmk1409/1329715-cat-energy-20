@@ -1,8 +1,9 @@
 .principle-section {
-  padding-bottom: 40px;
+  padding-bottom: 42px;
 }
 
 .principle-section__header {
+  margin: 0;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
@@ -10,5 +11,13 @@
   @media (min-width: $tablet-min-width) {
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+.principle-section__list {
+  margin-top: 38px;
+
+  @media (min-width: $tablet-min-width) {
+    margin-top: 72px;
   }
 }

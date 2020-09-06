@@ -1,21 +1,27 @@
 .product-section {
-  padding: 30px 0;
+  padding: 27px 0 35px;
   overflow: hidden;
 
   @media (min-width: $tablet-min-width) {
+    padding-top: 34px;
     padding-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    padding-top: 47px;
+    padding-bottom: 85px;
   }
 }
 
 .product-section__header {
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
 
   @media (min-width: $tablet-min-width) {
+    padding-bottom: 0;
     font-size: 60px;
     line-height: 60px;
     text-align: start;
@@ -29,22 +35,23 @@
   @media (min-width: $tablet-min-width) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 60px;
-    margin: 0 auto;
+    gap: 58px 60px;
+    margin: 82px auto 0;
     width: 708px;
     border: none;
   }
 
   @media (min-width: $desktop-min-width) {
+    margin-top: 85px;
     width: 1220px;
     grid-template-columns: repeat(4, 245px);
-    gap: 80px;
+    gap: 62px 80px;
   }
 }
 
 .product-section__extra-header {
   position: relative;
-  margin: 30px 0 35px;
+  margin: 27px 0 34px;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
@@ -52,27 +59,27 @@
   &::after {
     position: absolute;
     content: "";
-    top: 12px;
-    left: 245px;
+    top: 14px;
+    left: 247px;
     width: 100vw;
     border: 2px solid $green;
   }
 
   @media (min-width: $tablet-min-width) {
-    margin: 70px 0 80px;
+    margin: 66px 0 80px 37px;
     font-size: 36px;
     line-height: 36px;
 
     &::after {
-      top: 22px;
-      left: 365px;
+      top: 21px;
+      left: 374px;
     }
 
     &::before {
       position: absolute;
       content: "";
-      top: 22px;
-      right: 740px;
+      top: 21px;
+      right: 710px;
       width: 100vw;
       border: 2px solid $green;
     }
@@ -80,9 +87,11 @@
 
   @media (min-width: $desktop-min-width) {
     grid-column: 1/-1;
+    margin-top: 76px;
+    margin-left: 0;
 
     &::before {
-      right: 1250px;
+      right: 1260px;
     }
   }
 }
@@ -92,10 +101,10 @@
 }
 
 .product-section__gift-div {
-  margin-top: 50px;
+  margin-top: 39px;
 
   @media (min-width: $tablet-min-width) {
-    margin-top: 70px;
+    margin-top: 68px;
   }
 
   @media (min-width: $desktop-min-width) {

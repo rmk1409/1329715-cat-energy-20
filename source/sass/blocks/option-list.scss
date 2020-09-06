@@ -2,6 +2,10 @@
   display: grid;
   row-gap: 20px;
 
+  @media (min-width: $tablet-min-width) {
+    row-gap: 30px;
+  }
+
   @media (min-width: $desktop-min-width) {
     display: flex;
     justify-content: space-between;
