@@ -311,8 +311,6 @@
   content: "";
   top: 17px;
   right: 17px;
-  width: 17px;
-  height: 13px;
 
   @media (min-width: $tablet-min-width) {
     top: 19px;
@@ -323,8 +321,6 @@
 .form__input-svg--phone {
   top: 13px;
   right: 13px;
-  width: 20px;
-  height: 20px;
 
   @media (min-width: $tablet-min-width) {
     top: 16px;
