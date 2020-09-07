@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 21px 0 16px;
+  padding: 21px 0 18px;
   border-bottom: 1px solid $line-grey;
   border-top: 1px solid $line-grey;
 
@@ -15,7 +15,7 @@
 }
 
 .social-list__item {
-  margin-right: 35px;
+  margin-right: 37px;
 
   @media (min-width: $tablet-min-width) {
     margin-right: 33px;
