@@ -27,12 +27,14 @@
 
 .contact-section__invitation {
   margin: 0;
+  padding-left: 1px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-min-width) {
     width: 160px;
+    padding-left: 0;
     font-size: 20px;
     line-height: 25px;
     font-weight: normal;

@@ -156,8 +156,17 @@
 
   @media (min-width: $tablet-min-width) {
     position: absolute;
-    left: 170px;
-    clip: rect(0, 157px, 250px, 0);
+    left: 16px;
+    top: 52px;
+    clip: rect(0, 339px, 520px, 0);
+    width: 690px;
+    height: 517px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    left: 75px;
+    top: -87px;
+    clip: rect(0, 365px, 520px, 0);
   }
 }
 
@@ -165,10 +174,17 @@
   display: none;
 
   @media (min-width: $tablet-min-width) {
-    position: absolute;
-    left: 172px;
+    left: 16px;
+    top: 52px;
     display: block;
-    clip: rect(0, 300px, 250px, 155px);
+    clip: rect(0, 690px, 517px, 339px);
+  }
+
+  @media (min-width: $desktop-min-width) {
+    left: 75px;
+    top: -88px;
+    display: block;
+    clip: rect(0, 690px, 517px, 364px);
   }
 }
 
@@ -216,10 +232,24 @@
       width: 100%;
       border-bottom: 1px dotted rgba($black, 0.24);
     }
+
+    &:hover {
+      &::after {
+        border-bottom: 1px solid $black;
+      }
+    }
+
+    &:active {
+      outline: none;
+
+      &::after {
+        border-style: none;
+      }
+    }
   }
 }
 
-.example_bar {
+.example__bar {
   position: relative;
   width: 84px;
   height: 14px;
@@ -235,7 +265,7 @@
   }
 }
 
-.example_scale {
+.example__scale {
   position: absolute;
   top: 3px;
   left: 5px;
@@ -243,6 +273,7 @@
   height: 6px;
   background-color: $green;
   border-radius: 6px;
+  cursor: pointer;
 
   @media (min-width: $tablet-min-width) {
     top: -14px;
@@ -252,6 +283,15 @@
     border-radius: 50%;
     border: 13px solid $white;
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+  }
+
+  &:hover {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  &:active {
+    box-shadow: 0 0 0 1px $green;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
   }
 }
 

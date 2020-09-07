@@ -21,17 +21,6 @@
 
   @media (min-width: $desktop-min-width) {
     margin-left: 110px;
-  }
-}
-
-.main-header-nav__logo-img {
-  margin-right: -10px;
-}
-
-.main-header-nav__logo-text {
-  margin: 8px auto 0;
-
-  @media (min-width: $tablet-min-width) {
-    margin: 0;
+    width: auto;
   }
 }

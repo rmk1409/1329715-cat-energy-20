@@ -8,6 +8,15 @@
     margin-top: 23px;
     padding-left: 62px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.check:hover .check__box,
+.check:hover .check__radio {
+  border-color: $border-grey4;
 }
 
 .check:first-child {
@@ -55,8 +64,8 @@
     &::before {
       width: 18px;
       height: 18px;
-      top: 11px;
-      left: 11px;
+      top: 10px;
+      left: 10px;
     }
   }
 }

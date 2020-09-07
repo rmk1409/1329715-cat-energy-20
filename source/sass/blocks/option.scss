@@ -69,15 +69,15 @@
 
     &::before,
     &::after {
-      top: -32px;
+      top: -30px;
       left: 0;
       width: 100px;
       height: 100px;
     }
 
     &::after {
-      top: -38px;
-      left: 20px;
+      top: -36px;
+      left: 16px;
       width: 70px;
       height: 97px;
     }
@@ -103,8 +103,8 @@
 
   @media (min-width: $desktop-min-width) {
     &::after {
-      left: -20px;
-      top: -12px;
+      left: -19px;
+      top: -10px;
       width: 134px;
       height: 56px;
     }
@@ -171,6 +171,22 @@
     &::after {
       right: -10px;
     }
+  }
+
+  &:hover {
+    &::after {
+      right: -8px;
+      width: 32px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+
+      @media (min-width: $tablet-min-width) {
+        right: -18px;
+      }
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $desktop-min-width) {

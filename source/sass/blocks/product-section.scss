@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-min-width) {
-    padding-top: 47px;
+    padding-top: 46px;
     padding-bottom: 85px;
   }
 }
@@ -35,8 +35,8 @@
   @media (min-width: $tablet-min-width) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 58px 60px;
-    margin: 82px auto 0;
+    gap: 60px 60px;
+    margin: 81px auto 0;
     width: 708px;
     border: none;
   }
@@ -66,7 +66,7 @@
   }
 
   @media (min-width: $tablet-min-width) {
-    margin: 66px 0 80px 37px;
+    margin: 69px 0 80px 37px;
     font-size: 36px;
     line-height: 36px;
 
