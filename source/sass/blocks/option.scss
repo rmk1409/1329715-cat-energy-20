@@ -173,6 +173,22 @@
     }
   }
 
+  &:hover {
+    &::after {
+      right: -8px;
+      width: 32px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+
+      @media (min-width: $tablet-min-width) {
+        right: -18px;
+      }
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $desktop-min-width) {
     margin-top: 5px;
   }

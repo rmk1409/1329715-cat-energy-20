@@ -41,6 +41,14 @@
 
 .main-header-nav__logo-link-img {
   margin-right: -10px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-header-nav__logo-link-text {
