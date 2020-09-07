@@ -65,6 +65,10 @@
       width: 100%;
       border-bottom: 2px solid $green;
     }
+
+    @media (min-width: $desktop-min-width) {
+      bottom: -7px;
+    }
   }
 }
 

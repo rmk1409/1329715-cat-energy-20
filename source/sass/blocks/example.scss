@@ -156,8 +156,17 @@
 
   @media (min-width: $tablet-min-width) {
     position: absolute;
-    left: 170px;
-    clip: rect(0, 157px, 250px, 0);
+    left: 16px;
+    top: 52px;
+    clip: rect(0, 339px, 520px, 0);
+    width: 690px;
+    height: 517px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    left: 75px;
+    top: -87px;
+    clip: rect(0, 365px, 520px, 0);
   }
 }
 
@@ -165,10 +174,17 @@
   display: none;
 
   @media (min-width: $tablet-min-width) {
-    position: absolute;
-    left: 172px;
+    left: 16px;
+    top: 52px;
     display: block;
-    clip: rect(0, 300px, 250px, 155px);
+    clip: rect(0, 690px, 517px, 339px);
+  }
+
+  @media (min-width: $desktop-min-width) {
+    left: 75px;
+    top: -88px;
+    display: block;
+    clip: rect(0, 690px, 517px, 364px);
   }
 }
 

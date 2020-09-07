@@ -96,10 +96,12 @@
 
   @media (min-width: $desktop-min-width) {
     position: absolute;
-    left: 590px;
-    top: 80px;
+    left: 448px;
+    top: -109px;
     z-index: 1;
     display: block;
+    width: 552px;
+    height: 499px;
   }
 }
 

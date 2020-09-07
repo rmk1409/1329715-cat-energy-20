@@ -371,6 +371,12 @@
     margin-bottom: 21px;
     grid-column: 1/-1;
   }
+
+  @media (min-width: $desktop-min-width) {
+    &::before {
+      right: 1270px;
+    }
+  }
 }
 
 .form__fieldset-pet-behavior {
