@@ -11,6 +11,8 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const htmlmin = require('gulp-htmlmin');
+const minifyJS = require('gulp-minify');
 
 // Styles
 const styles = () => {
@@ -47,6 +49,7 @@ const copyHtml = () => {
   ], {
     base: "source"
   })
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 }
 exports.copyHtml = copyHtml;
@@ -57,9 +60,10 @@ const copyJS = () => {
   ], {
     base: "source"
   })
-    .pipe(gulp.dest("build/js"));
+    .pipe(minifyJS())
+    .pipe(gulp.dest("build"));
 }
-exports.copyJs = copyJS;
+exports.copyJS = copyJS;
 
 // Server
 
@@ -113,7 +117,7 @@ const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", gulp.series("copyHtml"));
   gulp.watch("source/*.html").on("change", sync.reload);
-  gulp.watch("source/js/*.js").on("change", gulp.series("copyJs"));
+  gulp.watch("source/js/*.js").on("change", gulp.series("copyJS"));
   gulp.watch("source/js/*.js").on("change", sync.reload);
 }
 
