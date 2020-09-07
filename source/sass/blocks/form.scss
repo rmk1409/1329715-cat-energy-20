@@ -150,10 +150,10 @@
 
 .form__legend {
   position: relative;
-  margin-bottom: 32px;
-  margin-left: -3px;
+  margin: 0 0 32px -1px;
   font-size: 24px;
   line-height: 26px;
+  font-weight: normal;
 
   &::after {
     position: absolute;
