@@ -1,7 +1,7 @@
 .principle-list {
   display: grid;
   row-gap: 20px;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Verdana", sans-serif;
 
   @media (min-width: $tablet-min-width) {
     grid-template-columns: repeat(2, 250px);

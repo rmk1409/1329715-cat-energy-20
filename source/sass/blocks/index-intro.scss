@@ -17,14 +17,7 @@
     min-height: 843px;
     text-align: start;
     color: $black;
-    background-image: url("../img/index-can-tablet@1x.jpg");
-    background-size: auto;
-    background-position-y: 234px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-can-tablet@2x.jpg");
-      background-size: 709px auto;
-    }
+    background-image: none;
   }
 
   @media (min-width: $desktop-min-width) {
@@ -91,11 +84,15 @@
   margin: 28px 0 0;
 
   @media (min-width: $tablet-min-width) {
-    display: none;
+    position: absolute;
+    top: 173px;
+    left: 0;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-min-width) {
-    position: absolute;
     left: 448px;
     top: -109px;
     z-index: 1;
