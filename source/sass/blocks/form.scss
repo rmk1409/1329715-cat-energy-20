@@ -102,6 +102,16 @@
   }
 }
 
+.form__input-text-or-number[type="number"] {
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
+
 .form__input-text-or-number:active + .form__input-svg,
 .form__input-text-or-number:focus + .form__input-svg {
   fill: $green;
@@ -342,7 +352,7 @@
 
 .form__necessary-field-paragraph {
   margin: 21px 0 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Verdana", sans-serif;
   font-size: 14px;
   line-height: 16px;
 

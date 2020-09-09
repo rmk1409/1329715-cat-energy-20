@@ -1,6 +1,7 @@
 .gift-div {
   width: 280px;
   min-height: 289px;
+  padding-bottom: 40px;
   background-color: $green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   color: $white;
@@ -39,7 +40,7 @@
   padding-top: 188px;
   width: 165px;
   margin: 0 auto;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Verdana", sans-serif;
   font-size: 16px;
   line-height: 20px;
 
