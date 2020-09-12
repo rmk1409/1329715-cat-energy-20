@@ -5,6 +5,8 @@ To check the project:
 2. Set dependencies by console command - **npm i**.
 3. Run the project by console command - **npm start**.
 
+Or just to check the public version click [here](https://rmk1409.github.io/cat-energy/index.html).
+
 * Студент: [R P](https://up.htmlacademy.ru/adaptive/20/user/1329715).
 * Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
