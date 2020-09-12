@@ -43,6 +43,17 @@ const copyFiles = () => {
 };
 exports.copyFiles = copyFiles;
 
+// It copies all files to 'docs' folder
+const ghPages = () => {
+  return gulp.src([
+    "build/**/*"
+  ], {
+    base: "build"
+  })
+    .pipe(gulp.dest("docs"));
+}
+exports.ghPages = ghPages;
+
 const copyHtml = () => {
   return gulp.src([
     "source/**/*.html"

@@ -1,0 +1,1 @@
+let toggleButton=document.querySelector(".menu-toggle-button"),menu=document.querySelector(".main-header-nav__menu");toggleButton.classList.toggle("visually-hidden"),menu.classList.toggle("main-header-nav__menu--closed"),toggleButton.onclick=(()=>{toggleButton.classList.toggle("menu-toggle-button--opened"),menu.classList.toggle("main-header-nav__menu--closed")});
